@@ -80,8 +80,8 @@ jobs:
         env:
           KUBECONFIG: ${{ github.workspace }}/kubeconfig.yaml
         run: |
-          helm upgrade --install your-release-name ./helm-chart \
-            --namespace your-namespace \
+          helm upgrade --install java-app ./helm-chart \
+            --namespace java-app \
             --create-namespace \
             --set image.repository=${{ env.REPOSITORY_URI }} \
             --set image.tag=latest
