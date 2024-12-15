@@ -21,12 +21,12 @@ This is a dummy Java Application
      ```
 
 ## **Docker Image**
-    - To create docker image
+   - To create docker image
     ```
     docker build -t <image-name>:<version> .
     ```
 
-    - Run Docker container
+   - Run Docker container
     ```
     docker run -d -p <desired-port>:8080 <image-name>
     ```

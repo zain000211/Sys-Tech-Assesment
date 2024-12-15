@@ -22,6 +22,10 @@ jobs:
         working-directory: ./java-app
         run: mvn clean package
 
+      - name: Run Unit Tests
+        working-directory: ./java-app
+        run: mvn test
+
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v3
         with:

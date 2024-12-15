@@ -38,6 +38,24 @@ ingress:
           pathType: ImplementationSpecific
   tls: []
 
+persistentVolume:
+  enabled: true
+  name: my-pv
+  capacity: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  storageClass: standard
+  hostPath: /mnt/data
+  reclaimPolicy: Retain
+
+persistentVolumeClaim:
+  enabled: true
+  name: my-pvc
+  capacity: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  storageClass: standard
+  
 nodeSelector: {}
 tolerations: []
 affinity: {}
