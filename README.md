@@ -1,6 +1,6 @@
 # Sys-tech-assesment
 
-> **Summary**
+## Summary
 This repository contains 
    - Sample Java Application
    - Helm Chart
@@ -31,6 +31,7 @@ This repository contains
 **GitHub Secrets**
    To securely configure AWS credentials, set the following secrets in GitHub repository:
 
+   
    AWS access key
    ```bash
    AWS_ACCESS_KEY_ID
@@ -73,4 +74,5 @@ This repository contains
 
 6. Verify Deployment:
    Run the following command locally to verify deployment
+   
    ```kubectl get pods -n java-app ```
