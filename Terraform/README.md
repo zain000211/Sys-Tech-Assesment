@@ -58,7 +58,16 @@ The infrastructure uses a modular approach to organize Terraform code. The direc
 ├── main.tf                # Entry point for Terraform
 ├── variables.tf           # Global variables
 ├── outputs.tf             # Outputs for the root module
-├── terraform.tfvars       # Variable values for the environment
+├── data.tf                # Use local files
+├── data                   # Iam policies for EKS Cluster
+|   ├── cluster_autoscaler_policy.json
+|   ├── eks_assume_autoscaler_policy.json
+|   ├── eks_assume_ingress_policy.json
+|   ├── eks_assume_logging_policy.json
+|   ├── eks_assume_role_policy.json
+|   ├── eks_cluster_policy.json
+|   ├── eks_ingress_policy.json
+|   ├── eks_nodegroup_assume_role_policy.json
 ├── modules/
 │   ├── vpc/               # Module for creating VPC
 │   │   ├── vpc.tf
