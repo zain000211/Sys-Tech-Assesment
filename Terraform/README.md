@@ -1,4 +1,4 @@
-# README: Using Terraform for AWS Infrastructure  
+# Use Terraform for AWS Infrastructure  
 
 This README provides instructions on how to use Terraform to deploy and manage the AWS infrastructure using modular design principles. It ensures reusability, organization, and maintainability of the infrastructure as code.
 

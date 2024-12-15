@@ -1,4 +1,4 @@
-> **Sample Java App**
+# Sample Java App
 This is a dummy Java Application
 
 ## **Prerequisites**
@@ -14,7 +14,7 @@ This is a dummy Java Application
      ```bash
       mvn clean package
      ```
-2.  **Run Application**
+2. **Run Application**
    - To run application 
      ```bash
      java -jar target/sample-0.0.1-SNAPSHOT.jar
@@ -22,11 +22,13 @@ This is a dummy Java Application
 
 ## **Docker Image**
    - To create docker image
+
     ```
     docker build -t <image-name>:<version> .
     ```
 
    - Run Docker container
+
     ```
     docker run -d -p <desired-port>:8080 <image-name>
     ```
